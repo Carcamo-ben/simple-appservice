@@ -14,13 +14,15 @@ EJ:  mysql -u sag@simplecontainer -h simplecontainer.mysql.database.azure.com -P
 
 5) Debe descargar este repositorio a su maquina local.
 
-6) Debe instalar el Azure CLI (https://aka.ms/installazurecliwindows) en su maquina local.
+6) Dentro de .env, debe agregar sus credenciales en MYSQL como indica el archivo.
 
-7) Dentro de la carpeta de este repositorio, debe correr az acr build -t simple:1.0.0 -r " Your Azure Container Registry Instance" -f Dockerfile .
+7) Debe instalar el Azure CLI (https://aka.ms/installazurecliwindows) en su maquina local.
+
+8) Dentro de la carpeta de este repositorio, debe correr az acr build -t simple:1.0.0 -r " Your Azure Container Registry Instance" -f Dockerfile .
 
 EJ: az acr build -t simple:1.0.0 -r simplebasic -f Dockerfile .
 
-8) Luego de este comando (10 min aprox), proceda a crear un app service con 
+9) Luego de este comando (10 min aprox), proceda a crear un app service con 
 
 
 Container image creation for Simple:
