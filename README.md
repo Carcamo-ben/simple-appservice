@@ -28,7 +28,7 @@ RUN php artisan simple:manager example qwerty
 
 EJ: az acr build -t simple:1.0.0 -r simplebasic -f Dockerfile .
 
-10) Luego de este comando (12 min aprox), proceda a crear un app service en modalidad Docker Container y OS Linux. En opciones Docker, elegir Single Container, Image Source elija Azure Container Registry
+10) Luego de este comando (12 min aprox), proceda a crear un app service en modalidad Docker Container y OS Linux. En opciones Docker, elegir Single Container, Image Source elija Azure Container Registry. En las opciones, elija el registry correspondiente, Image simple y Tag 1.0.0, y haga click en Review+Create.
 
 
 
