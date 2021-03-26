@@ -16,13 +16,19 @@ EJ:  mysql -u sag@simplecontainer -h simplecontainer.mysql.database.azure.com -P
 
 6) Dentro de .env, debe agregar sus credenciales en MYSQL como indica el archivo.
 
-7) Debe instalar el Azure CLI (https://aka.ms/installazurecliwindows) en su maquina local.
+7) Dentro del DockerFile cambie las tres lineas que crean credenciales por las que definan ustedes (vea https://github.com/digital-gob-cl/simple2#creaci%C3%B3n-de-usuarios-en-frontend-backend-y-manager)
 
-8) Dentro de la carpeta de este repositorio, debe correr az acr build -t simple:1.0.0 -r " Your Azure Container Registry Instance" -f Dockerfile .
+RUN php artisan simple:frontend mail@example.com 123456
+RUN php artisan simple:backend mail@example.com 123456
+RUN php artisan simple:manager example qwerty
+
+8) Debe instalar el Azure CLI (https://aka.ms/installazurecliwindows) en su maquina local.
+
+9) Dentro de la carpeta de este repositorio, debe correr az acr build -t simple:1.0.0 -r " Your Azure Container Registry Instance" -f Dockerfile .
 
 EJ: az acr build -t simple:1.0.0 -r simplebasic -f Dockerfile .
 
-9) Luego de este comando (12 min aprox), proceda a crear un app service en modalidad Docker Container y OS Linux. En opciones Docker, elegir Single Container, Image Source elija Azure Container Registry
+10) Luego de este comando (12 min aprox), proceda a crear un app service en modalidad Docker Container y OS Linux. En opciones Docker, elegir Single Container, Image Source elija Azure Container Registry
 
 
 Container image creation for Simple:
