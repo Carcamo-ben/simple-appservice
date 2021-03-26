@@ -6,7 +6,7 @@
 
 2) Crear un Azure Database for Mysql en Azure. Luego de crearlo, dirijase al recurso y vaya a Settings y pinche en connection security. Debe habilitar el accesso a los recursos de Azure, añadir las ips de las maquinas que se conectaran a Azure (puede habilitar todas las ips añadiendo 0.0.0.0 a 255.255.255.255) y deshabilitar las conexiones SSL (Luego puede habilitarla siguiendo estos pasos https://docs.microsoft.com/en-us/azure/app-service/tutorial-php-mysql-app?pivots=platform-linux#configure-tlsssl-certificate)
 
-3) Conectarse via mysql -u username@mysqlinstance" -h mysqlinstance.mysql.database.azure.com -P 3306 -p 
+3) Conectarse via mysql -u "username"@"mysqlinstance" -h "mysqlinstance".mysql.database.azure.com -P 3306 -p 
 
 EJ:  mysql -u sag@simplecontainer -h simplecontainer.mysql.database.azure.com -P 3306 -p
 
