@@ -1,4 +1,4 @@
-Container image creation:
+Container image creation for Simple:
 
 #local
 
@@ -6,4 +6,4 @@ docker build -t simple:1.0.0 -f Dockerfile .
 
 #Azure
 
-az acr build -t simple:1.0.0 -r simplebcc -f Dockerfile . 
+az acr build -t simple:1.0.0 -r <Azure Container Registry Instance> -f Dockerfile . 
