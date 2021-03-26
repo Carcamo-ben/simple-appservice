@@ -19,7 +19,9 @@ EJ:  mysql -u sag@simplecontainer -h simplecontainer.mysql.database.azure.com -P
 7) Dentro del DockerFile cambie las tres lineas que crean credenciales por las que definan ustedes (vea https://github.com/digital-gob-cl/simple2#creaci%C3%B3n-de-usuarios-en-frontend-backend-y-manager)
 
 RUN php artisan simple:frontend mail@example.com 123456
+
 RUN php artisan simple:backend mail@example.com 123456
+
 RUN php artisan simple:manager example qwerty
 
 8) Debe instalar el Azure CLI (https://aka.ms/installazurecliwindows) en su maquina local.
