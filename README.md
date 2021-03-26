@@ -32,6 +32,8 @@ EJ: az acr build -t simple:1.0.0 -r simplebasic -f Dockerfile .
 
 10) Luego de este comando (12 min aprox), proceda a crear un app service en modalidad Docker Container y OS Linux. En opciones Docker, elegir Single Container, Image Source elija Azure Container Registry. En las opciones, elija el registry correspondiente, Image simple y Tag 1.0.0, y haga click en Review+Create.
 
+11) Luego de la creacion del appservice, dirijase a http://"instancia-appservice".azurewebsites.net/ (Como se deshabilita la opcion de SSL, en https no funciona correctamente)
+
 
 
 #### Notas: NO puede utilizar la misma base de datos mysql para dos instancias de Simple distintas.
