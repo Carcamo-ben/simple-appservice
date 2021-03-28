@@ -34,7 +34,7 @@ EJ: az acr build -t simple:1.0.0 -r simplebasic -f Dockerfile .
 
 11) Luego de la creacion del appservice, dirijase a http://"instancia-appservice".azurewebsites.net/ (Como se deshabilita la opcion de SSL, en https no funciona correctamente)
 
-
+XX) Crear elasticsearch https://docs.microsoft.com/en-us/azure/virtual-machines/linux/tutorial-elasticsearch
 
 #### Notas: NO puede utilizar la misma base de datos mysql para dos instancias de Simple distintas.
 
