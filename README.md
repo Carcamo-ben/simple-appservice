@@ -35,6 +35,7 @@ EJ: az acr build -t simple:1.0.0 -r simplebasic -f Dockerfile .
 11) Luego de la creacion del appservice, dirijase a http://"instancia-appservice".azurewebsites.net/ (Como se deshabilita la opcion de SSL, en https no funciona correctamente)
 
 XX) Crear elasticsearch https://docs.microsoft.com/en-us/azure/virtual-machines/linux/tutorial-elasticsearch
+XY) Para utilizar almacenamiento persistente (guardar archivos) debe crear un file share en un storage account, y conectarlo en su app service a traves de los path mappings en la configuracion de su app service. Considerar que el codigo del docker se encuentra en la root folder var/www/simple. Ejemplo var/www/simple/public/datos
 
 #### Notas: NO puede utilizar la misma base de datos mysql para dos instancias de Simple distintas.
 
